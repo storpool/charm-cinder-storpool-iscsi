@@ -56,4 +56,5 @@ class CinderStorPoolCharm(CinderCharmBase):
 
 
 if __name__ == '__main__':
-    main(get_charm_class_for_release())
+    # main(get_charm_class_for_release())
+    main(CinderStorPoolCharm)
