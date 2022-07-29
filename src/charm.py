@@ -16,7 +16,7 @@
 
 
 from ops_openstack.plugins.classes import CinderStoragePluginCharm
-from ops_openstack.core import charm_class, get_charm_class_for_release
+from ops_openstack.core import charm_class, get_charm_class
 from ops.main import main
 
 
@@ -57,4 +57,5 @@ class CinderStorPoolCharm(CinderCharmBase):
 
 if __name__ == '__main__':
     # main(get_charm_class_for_release())
-    main(CinderStorPoolCharm)
+    # main(CinderStorPoolCharm)
+    main(get_charm_class(release="yoga"))
