@@ -35,7 +35,7 @@ class CinderCharmBase(CinderStoragePluginCharm):
         # Return the configuration to be set by the principal.
         backend_name = config.get('volume-backend-name',
                                   self.framework.model.app.name)
-        volume_driver = ''
+        volume_driver = 'cinder.volume.drivers.storpool.StorPoolDriver'
         options = [
             ('volume_driver', volume_driver),
             ('volume_backend_name', backend_name),
